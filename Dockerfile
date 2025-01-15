@@ -25,4 +25,4 @@ COPY . .
 
 RUN bin/rails assets:precompile
 
-CMD ["bash", "-c", "bin/rails db:prepare && bin/rails server"]
+CMD ["bash", "-c", "make db-prepare && make start"]

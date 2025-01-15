@@ -7,6 +7,8 @@ ruby '~> 3.2.2'
 
 gem 'bootsnap', require: false
 gem 'cssbundling-rails'
+# NOTE: должен быть в dev или test зависимостью. Испольузем для заполнения БД для демонстрации
+gem 'faker'
 gem 'flash_rails_messages'
 gem 'jbuilder'
 gem 'jsbundling-rails'
@@ -22,7 +24,6 @@ gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 
 group :development, :test do
   gem 'debug', platforms: %i[mri mingw x64_mingw]
-  gem 'faker'
   gem 'rubocop'
   gem 'rubocop-performance'
   gem 'rubocop-rails'
